@@ -5,7 +5,7 @@ Machine Learning approach to diagnose COVID-19 via X-Ray images
 
 This repository contains an extraordinary project! Machine learning is helping medical doctors to obtain maximum accuracy! 
 
-###Please star, fork and cite if you use!
+### Please star, fork and cite if you use!
 
 ### How to use?
 1. First you need to train your model. use folder _Train_. Run _maincode_ to build your model.<br>
