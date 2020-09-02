@@ -20,7 +20,7 @@ _script.js_ contains all JS we need to transfer images and results!
 <br> <b>Notice</b> that the models in this repository are trained by images collected by my own!
 
 ### Results for VGG16:
-<img src="https://github.com/magnumical/Online_Automatic_COVID_19_Diagnosing_system/blob/master/img/confusinVGG16.png" data-canonical-src="https://imreza.ir" width="450" height="250" />
+<img src="https://github.com/magnumical/Online_Automatic_COVID_19_Diagnosing_system/blob/master/img/confusinVGG16.png" data-canonical-src="https://imreza.ir" width="350" height="250" />
 <img src="https://github.com/magnumical/Online_Automatic_COVID_19_Diagnosing_system/blob/master/img/historyvgg16.png" data-canonical-src="https://imreza.ir" width="450" height="250" />
 
 
