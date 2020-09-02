@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html>
+<head><meta charset="utf-8">
+	<title>An Automated COVID-19 Detector</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" /><!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link href="assets/css/main.css" rel="stylesheet" /><!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]--><!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<link href="assets/css/ltr.css" rel="stylesheet" />
+	<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500,600,700,800&amp;display=swap" rel="stylesheet" /><script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script><script src="https://info.gesundheitsministerium.at/data/SimpleData.js"></script>
+	<link href="assets/css/style.css" rel="stylesheet" /><script src="assets/js/script.js"></script>
+</head>
+<body><!-- Wrapper -->
+<div id="wrapper"><!-- Header -->
+<header class="alt" id="header"><span class="logo"><img alt="" height="123" src="images/logo.png" width="123" /></span>
+	<h1>An Online Automated COVID-19 Detector</h1>
+
+	<p style="color: white">AI based</p>
+</header>
+<!-- Nav -->
+
+<nav id="nav">
+<ul>
+	<li><a class="active" href="#intro">Intro </a></li>
+	<li><a href="#first">Detect</a></li>
+	<li><a href="#cta">About Us </a></li>
+</ul>
+</nav>
+<!-- Main -->
+
+<div id="main"><!-- Introduction -->
+<section class="main" id="intro">
+<div class="spotlight">
+<div class="content">
+
+
+<a href="http://cvd.imreza.ir"><img src="images/iran.png" width="110" height="90"></a>
+<a href="http://cvdd.imreza.ir"><img src="images/ger.jpg" width="110" height="90"></a>
+<a href="http://cvde.imreza.ir"><img src="images/uk.jpg" width="110" height="90"></a>
+
+<br />
+<br />
+
+
+<header class="major">
+	<h2 align="center" style="font-family: inherit">Why we should use lung X-ray?</h2>
+</header>
+
+<p align="right" class="content">The spread of coronavirus disease progressed so quickly that it did not keep up with diagnosing in hospitals, which is why the rapid production of the RT-PCR test kits became very important, which also caused some problems with accuracy and the unreliability of some of them. The main symptoms are breathing difficulties and high fever. Studies have shown that in the early stages of the disease, chest X-rays provide a more accurate result than the PCR method. For this purpose, we have created an online system that recognizes CoVID-19 by analyzing the x-rays.  </p></div>
+<span class="image"><img alt="" src="images/pic01.jpg" /></span></div>
+<p align="left" class="content"></p>
+
+<ul class="statistics">
+	<li class="style1">FREE</li>
+	<li class="style2">Quick</li>
+	<li class="style3">Recommender System</li>
+	<li class="style4">PDF Output</li>
+</ul>
+
+<p class="content">This system is available<b> completely free.</b> The main core analyze the image and reports lungs engagement with virus, patient status and also a therapeutic guidline. </p>
+
+
+
+</section>
+<!-- First Section -->
+
+<section class="main special" id="first">
+<header class="major">
+<h2 style="font-family: inherit">Diagnose</h2>
+</header>
+<div class="card" ondragover="allowDrop(event)" ondrop="drop(event)">
+<div class="card-header d-flex flex-column justify-content-center align-items-center" id="xray-placeholder">
+<h2 class="card-title text-white text-center" id="textoverimg">Upload an image</h2>
+
+<div class=" w-60 d-none" id="result-page" style="width: 200px; height: 16px;">
+<div id="covidSlider" style="position: relative; left:98; width: 2px; height: 16px "></div>
+</div>
+</div>
+
+<div class="card-body">
+<div class="progress align-self-start mt-2 mb-2" id="progressContainer">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10" class="progress-bar progress-bar-striped progress-bar-animated" id="uploadProgress" role="progressbar" style="width: 10%"></div>
+</div>
+
+<div class="input-group">
+<div class="input-group-append mr-3"><span class="input-group-text" id="inputGroupFileAddon01" onclick="document.querySelector('#inputFileToLoad').click();"> Choose
+</span></div>
+
+<div class="custom-file"><input class="custom-file-input" id="inputFileToLoad" onchange="readyToUpload();" type="file" /> <label class="custom-file-label" id="chooseFile"> ... </label></div>
+<button class="btn btn-md btn-secondary" disabled="true" id="uploadButton" onclick="sendFile();" type="button">Diagnose
+</button></div>
+</div>
+</div>
+
+<br><br>
+<br>
+
+
+<div id="advise">
+<h4 align="right" style="font-family: inherit" class="content">
+ Overal results:
+</h4>
+
+
+
+<h5 class="زard-title  text-center" style="font-family: inherit" id="textimg1">
+	Please upload a image
+</h5>
+
+<br>
+<h5 class="card-title  text-center"style="font-family: inherit" id="textimg2">
+
+</h5>
+
+
+<h5 class="card-title  text-center"style="font-family: inherit" id="textimg3">
+
+</h5>
+
+<br><br>
+</div>
+
+
+<div class="input-group-append mr-3">
+<span class="input-group-text" id="inputGroupFileAddon01" onclick="printContent('advise')">
+Print
+</span>
+</div>
+
+<br><br><br>
+
+<!--new  -->
+
+
+<p align="left" class="content"><b>Sample images with positive Corona </b><br />
+<a href="http://imreza.ir/downloads/1p.jpeg">Image 1 </a><br />
+<a href="http://imreza.ir/downloads/2p.jpeg">Image 2</a><br />
+<a href="http://imreza.ir/downloads/3p.jpeg">Image 3</a><br />
+<br />
+<b>Sample images with negative Corona </b><br />
+<a href="http://imreza.ir/downloads/1n.jpeg">Image 1 </a><br />
+<a href="http://imreza.ir/downloads/2n.jpeg">Image 2</a><br />
+<a href="http://imreza.ir/downloads/3n.jpeg">Image 3</a></p>
+</section>
+<!-- Second Section --><!-- Get Started -->
+
+<section class="main special" id="cta">
+<header class="major">
+<h2>About Us</h2>
+
+<p>Developed by Reza Amini, University of Tabriz</p>
+<p>Cloud engineering: Mahdi Kashanipour,University of Georgia </p>
+<p>German version: Mahta Yousefi,University of FU Berlin </p>
+
+
+
+
+<p>In collabration with Ardabil Science and Technology Park</p>
+<img alt="" height="180" src="images/photo_2020-04-20_19-44-12.jpg" width="180" />
+<p></p>
+</header>
+
+<footer class="major">
+<ul class="actions">
+	<li><a class="button special" href="https://imreza.ir">Main Website</a></li>
+</ul>
+</footer>
+</section>
+</div>
+
+<!-- Footer -->
+
+
+<!-- Footer -->
+
+<footer id="footer">
+
+
+</section>
+</footer>
+
+
+</div>
+<!-- Scripts --><script src="assets/js/jquery.min.js"></script><script src="assets/js/jquery.scrollex.min.js"></script><script src="assets/js/jquery.scrolly.min.js"></script><script src="assets/js/skel.min.js"></script><script src="assets/js/util.js"></script><!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]--><script src="assets/js/main.js"></script></body>
+</html>
