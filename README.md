@@ -3,9 +3,12 @@ Machine Learning approach to diagnose COVID-19 via X-Ray images
 
 <img src="https://github.com/magnumical/Online_Automatic_COVID_19_Diagnosing_system/blob/master/logom.png" data-canonical-src="https://imreza.ir" width="300" height="100" />
 
+## [Preprint is available here](https://zenodo.org/record/4043136#.X2m-VIuhVZU)
+
+
 This repository contains an extraordinary project! Machine learning is helping medical doctors to obtain maximum accuracy! 
 
-### Please star, fork and cite if you use!
+### Please star, fork and cite if you use! 
 
 ### How to use?
 1. First you need to train your model. use folder _Train_. Run _maincode_ to build your model.<br>
@@ -22,6 +25,9 @@ _script.js_ contains all JS we need to transfer images and results!
 ### Results for VGG16:
 <img src="https://github.com/magnumical/Online_Automatic_COVID_19_Diagnosing_system/blob/master/img/confusinVGG16.png" data-canonical-src="https://imreza.ir" width="350" height="250" />
 <img src="https://github.com/magnumical/Online_Automatic_COVID_19_Diagnosing_system/blob/master/img/historyvgg16.png" data-canonical-src="https://imreza.ir" width="450" height="250" />
+
+### Cite like this!
+`Amini Gougeh, Reza. (2020, September 22). An Online Automatic Corona Diagnose System Based on Chest X-ray Images (Version 1). Zenodo. http://doi.org/10.5281/zenodo.4043136`
 
 
 ### Some valuable refrences:
