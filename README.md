@@ -1,5 +1,5 @@
-# Online_Automatic_COVID_19_Diagnosing_system
-Machine Learning approach to diagnose COVID-19 via X-Ray images
+# WebBased COVID_19 Diagnosing System (SaaS)
+Machine Learning approach to diagnose COVID-19 via X-Ray images (image classification)
 
 <img src="https://github.com/magnumical/Online_Automatic_COVID_19_Diagnosing_system/blob/master/logom.png" data-canonical-src="https://imreza.ir" width="300" height="100" />
 
